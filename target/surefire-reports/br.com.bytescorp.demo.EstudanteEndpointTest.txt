@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: br.com.bytescorp.demo.EstudanteEndpointTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 5.193 s <<< FAILURE! - in br.com.bytescorp.demo.EstudanteEndpointTest
+obterEstudanteQuandoUsuarioESenhaEstivremCorretosRetornandoStatusCode200  Time elapsed: 0.051 s  <<< ERROR!
+org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8080/v1/usuario/estudantes/15": Connection refused; nested exception is java.net.ConnectException: Connection refused
+	at br.com.bytescorp.demo.EstudanteEndpointTest.obterEstudanteQuandoUsuarioESenhaEstivremCorretosRetornandoStatusCode200(EstudanteEndpointTest.java:95)
+Caused by: java.net.ConnectException: Connection refused
+	at br.com.bytescorp.demo.EstudanteEndpointTest.obterEstudanteQuandoUsuarioESenhaEstivremCorretosRetornandoStatusCode200(EstudanteEndpointTest.java:95)
+
+obterEstudanteQuandoUsuarioESenhaEstivremCorretosEEstundateNaoEncontradoRetornandoStatusCode404  Time elapsed: 0.004 s  <<< ERROR!
+org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8080/v1/usuario/estudantes/obterEstudantePorNome/Doninha": Connection refused; nested exception is java.net.ConnectException: Connection refused
+	at br.com.bytescorp.demo.EstudanteEndpointTest.obterEstudanteQuandoUsuarioESenhaEstivremCorretosEEstundateNaoEncontradoRetornandoStatusCode404(EstudanteEndpointTest.java:100)
+Caused by: java.net.ConnectException: Connection refused
+	at br.com.bytescorp.demo.EstudanteEndpointTest.obterEstudanteQuandoUsuarioESenhaEstivremCorretosEEstundateNaoEncontradoRetornandoStatusCode404(EstudanteEndpointTest.java:100)
+
