@@ -13,7 +13,7 @@ node{
         mavenSettingsConfig: 'my-maven-settings') {
 
       // Run the maven build
-      sh "mvn clean verify"
+      sh "mvnw package -DskipTests=true && java -jar target/AprendendoSpringBoot.jar"
 
     } // withMaven will discover the generated Maven artifacts, JUnit Surefire & FailSafe & FindBugs & SpotBugs reports...
   }
