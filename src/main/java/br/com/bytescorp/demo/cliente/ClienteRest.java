@@ -21,7 +21,7 @@ import java.util.List;
 public class ClienteRest {
     public static void main(String[] args) {
         Estudante estudante = new Estudante();
-        estudante.setNome("Éden rico 36");
+        estudante.setNome("Ciclano da Silva");
 
         GenericDao genericDao = new EstudantesDAO();
 
@@ -34,7 +34,7 @@ public class ClienteRest {
         System.out.println("Obter por nome " + genericDao.obterPorNome("Liony Gomes Vieira"));
 
         estudante.setId(4L);
-        estudante.setNome("Fabiana Tesuda!");
+        estudante.setNome("Fulano de Tal");
         genericDao.salvar(estudante);
 
         genericDao.excluir(57);

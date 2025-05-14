@@ -101,9 +101,9 @@ public class EstudanteEndpointTest {
         Assertions.assertThat(responseEntity.getStatusCodeValue()).isEqualTo(404);
     }
     @Test
-    @WithMockUser(username = "eden.alencar", password = "192325ED$", roles = {"ADMIN"})
+    @WithMockUser(username = "", password = "", roles = {"ADMIN"})
     public void excluirQuandoUsuarioPossuirRoleAdminEEstudanteExistirRetornandoStatusCode200() throws Exception {
-        Estudante estudante = new Estudante("Éden Rico 36");
+        Estudante estudante = new Estudante("Ciclano da Silva");
         estudante.setId(82L);
 
         when(estudanteRepository.findById(82L)).thenReturn(java.util.Optional.of(estudante));

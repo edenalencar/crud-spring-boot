@@ -38,13 +38,13 @@ public class EstudantesDAO implements GenericDao {
     public EstudantesDAO() {
         restTemplateUsuario = new RestTemplateBuilder()
                 .rootUri("http://localhost:8080/v1/usuario/estudantes")
-                .basicAuthentication("eden.alencar", "192325ED$")
+                .basicAuthentication("", "")
                 .errorHandler(new RestResponseExceptionHandler())//Linha que define a classe de error padrao, para tratar erros sem precisar colocar try catch em todos os metodos
                 .build();
         restTemplateAdmin = new RestTemplateBuilder()
                 .rootUri("http://localhost:8080/v1/admin/estudantes")
                 .errorHandler(new RestResponseExceptionHandler())
-                .basicAuthentication("eden.alencar", "192325ED$")
+                .basicAuthentication("", "")
                 .build();
     }
 
